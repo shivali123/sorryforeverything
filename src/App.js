@@ -34,11 +34,15 @@ export default function App(props) {
     width: "10rem",
     fontsize: "1.5rem",
     height: "2rem",
-    padding: "5px",
+    padding: "50px",
     borderRadius: "10px",
     backgroundColor: "green",
     color: "White",
     border: "2px solid yellow",
+    justifyContent: 'center',
+    marginLeft: '50%',
+    marginTop: '20%'
+
   };
 
 
@@ -68,7 +72,7 @@ export default function App(props) {
   return (
     <>
       <button style={buttonStyle} onClick={openDialogBox}>
-        Open Dialog
+        OPEN POPUP
       </button>
       <Dialog onClose={handleClose} open={openDialog} >
         <h3 style={dialogStyle}>
