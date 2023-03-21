@@ -8,17 +8,17 @@ export default function App(props) {
   const [yescount, setcount] = React.useState(0);
   const [nocount, setnocount] = React.useState(0);
 
-  const [title, setitle] = React.useState('Did you felt bad what i said????');
-  const arr = ['I am sorry, are you still angry with me??',
-    'Still angry with me?',
-    'Still angry ?',
-    'Still angry????',
-    'Still angry???']
-  const brr = ['Will you go for a coffee?',
-    'Pleaseeee',
-    'Pleaseeee ????',
-    'Pleaseeee ?????????',
-    'Pleaseee :(  '];
+  const [title, setitle] = React.useState('DID YOU FELT BAD WHAT I SAID ????');
+  const arr = ['I AM SORRY, ARE YOU STILL ANGRY WITH ME??',
+    'STILL ANGRY WITH ME?',
+    'STILL ANGRY?',
+    'STILL ANGRYYYYY  ????',
+    'STILL ANGRY???']
+  const brr = ['WILL YOU GO FOR A COFFEE?',
+    'PLEASE?',
+    'PLEASE  ????',
+    'PLEASEEEEEEEE  ?????????',
+    'PLEASEEEEEEEE ?????????????????? '];
   const [selectedoptions, setselectedoptions] = React.useState(false);
   const handleClose = () => {
     handleDisplay(false);
@@ -50,7 +50,7 @@ export default function App(props) {
       openDialogBox();
     }
     else {
-      setitle('Okay :( ');
+      setitle('OKAY :( ');
     }
   }
   const clickedno = () => {
@@ -61,7 +61,7 @@ export default function App(props) {
       openDialogBox();
     }
     else {
-      setitle('Fine , sorry once again :( ');
+      setitle('FINE , SORRY ONCE AGAIN :( ');
     }
   }
 
@@ -75,8 +75,8 @@ export default function App(props) {
           {title}
         </h3>
         <div style={{ display: 'flex', left: '50%', justifyContent: 'center', alignItems: 'center', alignItems: 'center' }}>
-          <input type='button' onClick={clickedyes} style={{ marginLeft: '20px', marginBottom: '5px', padding: '10px' }} value='yes' id='btnYes' />
-          <input type='button' onClick={clickedno} style={{ marginLeft: '20px', marginBottom: '5px', padding: '10px' }} value='no' id='btnNo' />
+          <input type='button' onClick={clickedyes} style={{ width: 100, marginLeft: '20px', marginBottom: '5px', padding: '10px' }} value='YES' id='btnYes' />
+          <input type='button' onClick={clickedno} style={{ width: 100, marginLeft: '20px', marginBottom: '5px', padding: '10px' }} value='NO' id='btnNo' />
         </div>
       </Dialog>
     </>
